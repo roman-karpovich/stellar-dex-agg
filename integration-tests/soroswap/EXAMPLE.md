@@ -4,11 +4,11 @@ If both legs of a split trade use the same XLM/USDC pair, the first leg moves th
 
 | On the captured pair | USDC output |
 | --- | ---: |
-| One 86.1415000 XLM leg, quoted in isolation | 11.9654142 |
-| Two such legs, both quoted at the opening reserves | 23.9308284 |
-| Two legs executed in sequence | 23.6965576 |
+| One 90.4722000 XLM leg, quoted in isolation | 11.4149918 |
+| Two such legs, both quoted at the opening reserves | 22.8299836 |
+| Two legs executed in sequence | 22.6064897 |
 
-The second test sets the aggregate minimum one unit above the sequential quote. It checks error 8 and the trader, aggregator and pool balances and pair reserves. Retrying with the exact minimum succeeds. The Protocol 29 captures are from mainnet ledgers 65534382 (split) and 65534377 (minimum). Authorization is mocked locally.
+The second test sets the aggregate minimum one unit above the sequential quote. It checks error 8 and the trader, aggregator and pool balances and pair reserves. Retrying with the exact minimum succeeds. The Protocol 30 captures are from mainnet ledgers 65646134 (split) and 65646133 (minimum). Authorization is mocked locally.
 
 [Read the Rust assertions](tests/soroswap.rs#L160).
 
